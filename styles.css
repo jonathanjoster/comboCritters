@@ -6,7 +6,7 @@ body {
 .orb {
     font-family: 'Orbitron', sans-serif;
 }
-a, i {
+#left a, i {
     color: white;
 }
 a, a:hover {
