@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #102555;
+            color: white;
+        }
+        .orb {
+            font-family: 'Orbitron', sans-serif;
+        }
+        a, i {
+            color: white;
+        }
+        a, a:hover {
+            text-decoration: none;
+        }
+
+        #left li {
+            padding-top: 10px;
+        }
+        .lucky-kat {
+            background-color: #DF4E4D;
+        }
+        .my-blue {
+            background-color: #4989F4;
+        }
+
+        @media screen and (max-width: 991px) {
+            #left li,
+            #left .embed-responsive {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="max-width:1000px">
+        <div class="row">
+            <div id="left" class="col-lg-4 text-center my-blue">
+                <div class="sticky-top mb-3 pt-5">
+                    <a href="#">
+                        <img src="img/logo.png" width="200" height="" class="d-inline-block align-top" alt="">
+                    </a>
+
+                    <ul class="list-group mt-4 orb" style="list-style: none;">
+                        <a href="#"><li>Description</li></a>
+                        <a href="#gifs"><li>Gifs</li></a>
+                        <a href="#features"><li>Features</li></a>
+                        <a href="#caro"><li>Carousel</li></a>
+                    </ul>
+
+                    <div class="embed-responsive embed-responsive-16by9 mt-4">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xdZjGjGnxDw" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 offset-lg-1">
+                <img src="img/title.png" height="300" class="img-fluid mt-4">
+
+                <div class="container-fluid">
+                    <h4 class="text-center my-4 orb">
+                        COMBINE MONSTERS TO EVOLVE
+                    </h4>
+                    <p>
+                        Combo Critters is a fabulous game created by Lucky Cat Studios.
+                    </p>
+                    <p class="font-italic">
+                        "Combine to evolve your critters and get ready to conquer the universe! Explore planets to
+                        discover quirky inhabitants, and courageously go into battle against them. Collect these cute
+                        critters and get stronger by mashing them up in the combine-machine."
+                        - from lucky-kat.com
+                    </p>
+                </div>
+
+                <h3 id="gifs" class="mt-5 mb-3 orb">Gifs</h3>
+                <div class="w-75 mx-auto">
+                    <div class="d-flex justify-content-between">
+                        <img src="img/gameplay1.gif" width="49%">
+                        <img src="img/gameplay4.gif" width="49%">
+                    </div>
+                </div>
+
+                <h3 id="features" class="mt-5 mb-3 orb">Features</h3>
+                <div class="w-75 mx-auto">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="mx-3">
+                            <h4>Combine and get stronger!</h4>
+                            <p>You can create a brand-new critter by combining two critters.</p>
+                            <p>Wanna get strong one?</p>
+                        </div>
+                        <img src="img/gameplay3.gif" width="49%" class="img-thumbnail">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <img src="img/gameplay2.gif" width="49%" class="img-thumbnail">
+                        <div class="mx-3">
+                            <h4>Catch 'em all!</h4>
+                            <p>Once beat a critter, you have a chance to catch it.</p>
+                            <p>...If you fail, they run away.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 id="caro" class="mt-5 mb-3 orb">Other Images Carousel</h3>
+                <div style="max-width:500px; margin: 0 auto; background-color: #001545;" class="mb-4">
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel"
+                        data-interval="2000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="text-center">
+                                    <img src="img/img1.png" height="400">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="text-center">
+                                    <img src="img/img2.png" height="400">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="text-center">
+                                    <img src="img/img3.png" height="400">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="text-center">
+                                    <img src="img/img4.png" height="400">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="text-center">
+                                    <img src="img/img5.png" height="400">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="height:90px"
+    class="lucky-kat d-flex justify-content-center align-items-center">
+            Best regards and appreciation for 
+            <a href="https://www.lucky-kat.com/">
+                <img src="https://static1.squarespace.com/static/54e34142e4b0bfaec1ee34d2/t/54fef533e4b02d095309fd01/1605105523717/?format=1500w"
+                height="70">
+            </a>
+            <a href="https://twitter.com/LuckyKatStudios">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="http://www.facebook.com/profile.php?id=466268083523876">
+                <i class="fab fa-facebook-f" style="padding-left:15px"></i>
+            </a>
+            <a href="https://www.instagram.com/luckykatstudios/">
+                <i class="fab fa-instagram" style="padding-left:15px"></i>
+            </a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
