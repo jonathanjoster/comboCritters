@@ -5,68 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #102555;
-            color: white;
-        }
-        .orb {
-            font-family: 'Orbitron', sans-serif;
-        }
-        a, i {
-            color: white;
-        }
-        a, a:hover {
-            text-decoration: none;
-        }
-
-        #left li {
-            padding-top: 10px;
-        }
-        .lucky-kat {
-            background-color: #DF4E4D;
-        }
-        .my-blue {
-            background-color: #4989F4;
-        }
-
-        @media screen and (max-width: 991px) {
-            #left li,
-            #left .embed-responsive {
-                display: none;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Orbitron:wght@500&family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stars.css">
 </head>
 
 <body>
-    <div class="container-fluid" style="max-width:1000px">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    
+    <div class="container-fluid" style="max-width:1000px; margin-top: -6px;">
         <div class="row">
             <div id="left" class="col-lg-4 text-center my-blue">
-                <div class="sticky-top mb-3 pt-5">
+                <div class="sticky-top mb-3 my-2 pt-lg-5">
                     <a href="#">
                         <img src="img/logo.png" width="200" height="" class="d-inline-block align-top" alt="">
                     </a>
 
-                    <ul class="list-group mt-4 orb" style="list-style: none;">
-                        <a href="#"><li>Description</li></a>
-                        <a href="#gifs"><li>Gifs</li></a>
-                        <a href="#features"><li>Features</li></a>
-                        <a href="#caro"><li>Carousel</li></a>
-                    </ul>
-
-                    <div class="embed-responsive embed-responsive-16by9 mt-4">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xdZjGjGnxDw" allowfullscreen></iframe>
+                    <div class="d-none d-lg-block">
+                        <ul class="list-group mt-4 orb" style="list-style: none;">
+                            <a href="#"><li>Description</li></a>
+                            <a href="#gifs"><li>Gifs</li></a>
+                            <a href="#features"><li>Features</li></a>
+                            <a href="#caro"><li>Carousel</li></a>
+                            <a href="#whoami"><li>Who Am I</li></a>
+                        </ul>
+                        
+                        <div class="embed-responsive embed-responsive-16by9 mt-4">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xdZjGjGnxDw" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-7 offset-lg-1">
-                <img src="img/title.png" height="300" class="img-fluid mt-4">
+                <img src="img/title.png" height="300" class="img-fluid mt-4 pt-lg-3">
 
                 <div class="container-fluid">
                     <h4 class="text-center my-4 orb">
@@ -84,10 +65,10 @@
                 </div>
 
                 <h3 id="gifs" class="mt-5 mb-3 orb">Gifs</h3>
-                <div class="w-75 mx-auto">
+                <div class="mx-auto" style="width: 85%">
                     <div class="d-flex justify-content-between">
-                        <img src="img/gameplay1.gif" width="49%">
-                        <img src="img/gameplay4.gif" width="49%">
+                        <img src="img/gameplay1.gif" width="48%">
+                        <img src="img/gameplay4.gif" width="48%">
                     </div>
                 </div>
 
@@ -112,7 +93,7 @@
                 </div>
 
                 <h3 id="caro" class="mt-5 mb-3 orb">Other Images Carousel</h3>
-                <div style="max-width:500px; margin: 0 auto; background-color: #001545;" class="mb-4">
+                <div style="max-width:500px; margin: 0 auto; background-color: #001545;">
                     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel"
                         data-interval="2000">
                         <ol class="carousel-indicators">
@@ -159,6 +140,22 @@
                         </a>
                     </div>
                 </div>
+
+                <h3 id="whoami" class="mt-5 mb-3 orb">Who am I</h3>
+                <div class="mb-4">
+                    <div class="text-center">
+                        <img src="img/me.jpeg" width="250">
+                    </div>
+                    <p class="text-left mt-1">I, Jona, love Combo Critters so much,
+                        and have been playing this game since 2 or 3 years ago.<br>
+                        Character designs, music, systems, all of them is my favorite.
+                    </p>
+                    <p>The picture above is "Mechanical Captain Carrot"
+                        who has 400HP/350ATK.<br>
+                        You can see him as a boss of 2nd area first,
+                        and meet again at last stage.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -174,10 +171,10 @@
                 <i class="fab fa-twitter"></i>
             </a>
             <a href="http://www.facebook.com/profile.php?id=466268083523876">
-                <i class="fab fa-facebook-f" style="padding-left:15px"></i>
+                <i class="fab fa-facebook-f" style="padding-left:20px"></i>
             </a>
             <a href="https://www.instagram.com/luckykatstudios/">
-                <i class="fab fa-instagram" style="padding-left:15px"></i>
+                <i class="fab fa-instagram" style="padding-left:20px"></i>
             </a>
     </footer>
 
