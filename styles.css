@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(16,37,85);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+.orb {
+    font-family: 'Orbitron', sans-serif;
+}
+a, i {
+    color: white;
+}
+a, a:hover {
+    text-decoration: none;
+}
+
+#left li {
+    padding-top: 10px;
+}
+.lucky-kat {
+    background-color: #DF4E4D;
+}
+#left {
+    background-color: rgba(73,137,244,.7);
+}
+footer {
+    background-color: #DF4E4D;
+    font-family: 'Playfair Display', serif;
+}
