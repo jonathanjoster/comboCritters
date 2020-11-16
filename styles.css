@@ -9,8 +9,11 @@ body {
 #left a, i {
     color: white;
 }
-a, a:hover {
+a:hover {
     text-decoration: none;
+}
+#links i:hover {
+    color: rgba(73,137,244,.7);
 }
 
 #left li {
